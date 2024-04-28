@@ -258,20 +258,41 @@ p {
 /* estilos pag registro */
 
 .main-registro {
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 	background-image: url(../assets/img/background-general.jpg);
 	background-position: center;
 	background-size: cover;
 	height: 90vh;
+	justify-content: center;
+}
+.formulario {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin: 10px;
+	align-items: center;
+}
+.formulario h2 {
+	text-transform: uppercase;
+	color: #ffdf16;
+	font-family: "Inter", sans-serif;
 }
 
 .formulario fieldset {
+	display: flex;
+	flex-direction: column;
 	width: 50%;
 	height: 50vh;
-	margin-left: 10px;
-	border: 3px solid #b1b1b1;
+	margin: 10px;
+	border: 3px solid #ffe0166c;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 20px;
 }
-
 .formulario legend {
 	color: #fff;
 	font-family: Inter;
@@ -288,8 +309,40 @@ p {
 	font-weight: 400;
 	text-transform: capitalize;
 }
+.formulario input::placeholder {
+	color: #ffdf16;
+}
 
 .formulario input {
-	width: 300px;
-	height: 72px;
+	width: 95%;
+	height: 130px;
+	font-size: 24px;
+	text-transform: capitalize;
+	font-weight: 700;
+	color: white;
+	background-color: transparent;
+	border: none;
+	border-bottom: 4px solid #ffdf16;
+}
+
+.button {
+	display: flex;
+	width: 50%;
+	justify-content: center;
+}
+
+.button input {
+	background-color: #ffdf16;
+	color: black;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	height: 80px;
+	text-decoration: none;
+	border: none;
+}
+
+.button input:hover {
+	background-color: #000;
+	color: #ffdf16;
 }
