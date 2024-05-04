@@ -48,11 +48,19 @@ h3 {
 	line-height: normal;
 	text-transform: uppercase;
 }
+h5 {
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+}
 
 p {
 	color: #fff;
 	font-family: Inter;
-	font-size: 24px;
+	font-size: 20px;
 	font-style: normal;
 	font-weight: 400;
 }
@@ -60,10 +68,11 @@ p {
 .footer {
 	background-color: #ffdf16;
 	display: flex;
-	height: 80px;
+	justify-content: space-evenly;
+	height: 100%;
 	align-items: center;
 	gap: 20px;
-	padding: 0.625rem;
+	padding: 20px;
 }
 .footer div {
 	display: flex;
@@ -71,6 +80,7 @@ p {
 }
 
 .footer p {
+	margin: 10px;
 	color: #000;
 	font-family: Inter;
 	font-size: 24px;
@@ -79,7 +89,7 @@ p {
 }
 
 .header-general {
-	background-color: #000;
+	background-color: #000000;
 	background-position: center;
 	background-size: cover;
 }
@@ -116,6 +126,11 @@ p {
 	align-items: center;
 }
 
+.nav-flex #toggle,
+.nav-flex label {
+	display: none;
+}
+
 .navBar li a {
 	text-decoration: none;
 	color: #fff;
@@ -148,12 +163,27 @@ p {
 	margin: 10px;
 }
 .contenedor-section-principal article img {
-	width: 45%;
+	width: 50%;
 
 	border-radius: 11px;
 }
 .section-principal img {
 	height: 235px;
+}
+
+.container-fluid {
+	background-image: url(../assets/img/background-general.jpg);
+}
+
+.cards-wrapper {
+	display: flex;
+}
+
+.card {
+	margin: 50px;
+	width: calc(100% / 3);
+	background-color: #000;
+	color: yellow;
 }
 
 /* estilo pag nosotros  */
@@ -345,4 +375,134 @@ p {
 .button input:hover {
 	background-color: #000;
 	color: #ffdf16;
+}
+
+/* media querys */
+
+/* responsive pag nosotros */
+
+@media (max-width: 1440px) {
+	.main-nosotros {
+		grid-template-areas:
+			"img1 img2"
+			"p p";
+	}
+	.main-nosotros img {
+		width: 90%;
+		margin: 10px;
+		padding-top: 10px;
+		gap: 10px;
+	}
+	.main-nosotros p {
+		margin: 30px;
+		text-align: left;
+	}
+}
+
+@media (max-width: 1024px) {
+	.main-nosotros {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.main-nosotros img {
+		display: inline-flex;
+		width: 80%;
+		margin: 10px;
+		gap: 10px;
+	}
+	.footer {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+@media (max-width: 768px) {
+	.nav-flex {
+		flex-direction: column;
+		justify-content: center;
+		gap: 10px;
+	}
+	.navBar {
+		flex-direction: column;
+		align-items: center;
+		gap: 5px;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 425px) {
+	.footer {
+		padding: 0;
+	}
+}
+
+/* responsive pag productos */
+
+@media (max-width: 1440px) {
+	.section-productos {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		height: fit-content;
+	}
+	.grid-menu {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.grid-menu img {
+		width: auto;
+	}
+}
+@media (max-width: 1024px) {
+	.section-productos {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		height: fit-content;
+	}
+	.grid-menu {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.grid-menu img {
+		width: auto;
+	}
+}
+@media (max-width: 768px) {
+	.section-productos {
+		display: flex;
+		flex-direction: column;
+		height: fit-content;
+		align-items: center;
+	}
+	.grid-menu {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+	}
+
+	.grid-menu img {
+		width: max-content;
+		justify-self: auto;
+	}
+}
+@media (max-width: 425px) {
+	.section-productos {
+		display: flex;
+		flex-direction: column;
+		height: fit-content;
+		align-items: center;
+	}
+	.grid-menu {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+	}
+
+	.grid-menu img {
+		width: max-content;
+		justify-self: auto;
+	}
 }
