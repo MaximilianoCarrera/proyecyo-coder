@@ -86,7 +86,7 @@ header {
 .main-index section:nth-child(2) {
   background-color: black;
   width: 100%;
-  height: 21.875rem;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -96,14 +96,14 @@ header {
   .main-index section:nth-child(2) div {
     display: flex; }
     .main-index section:nth-child(2) div article {
-      width: calc(100% / 3);
       display: flex;
+      width: calc(100% / 3);
       gap: 0.625rem;
       margin: 10px; }
       .main-index section:nth-child(2) div article img {
-        width: 100%;
-        height: 100%;
-        border-radius: 11px; }
+        width: 50%;
+        border-radius: 11px;
+        max-width: fit-content; }
 
 .main-index section:last-child {
   background-image: url(../assets/img/background-general.jpg); }
