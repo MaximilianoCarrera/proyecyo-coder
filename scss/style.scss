@@ -1,0 +1,18 @@
+/* siempre llamo primero a las utilidades */
+@import "./utilities/variable";
+
+/* deberían ir los bloques que corresponden a la carpeta bases */
+
+@import "./base/reset";
+@import "./base/tipografias";
+@import "./base/estilos-generales";
+
+/* todo lo correspondiente a layout */
+
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/footer";
+@import "./layout/main-nosotros";
+@import "./components/card";
+
+/* por ultimo los mediaquerys */
