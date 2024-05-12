@@ -1,0 +1,31 @@
+.main-sucursales {
+	display: flex;
+	flex-direction: column;
+	background-image: url(../assets/img/background-general.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	.flex-sucursales {
+		display: grid;
+		align-items: center;
+		justify-items: center;
+		grid-template-columns: 30% 30% 40%;
+		margin: 1.25rem;
+		gap: 1.5rem;
+		iframe {
+			width: 100%;
+			border: 2px solid s#040404;
+		}
+		div {
+			ul {
+				li {
+					color: white;
+					text-transform: capitalize;
+					font-size: 24px;
+					font-family: "Inter", sans-serif;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}

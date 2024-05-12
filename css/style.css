@@ -101,7 +101,8 @@ header {
       gap: 0.625rem;
       margin: 10px; }
       .main-index section:nth-child(2) div article img {
-        width: 50%;
+        width: 21.875rem;
+        height: 9.375rem;
         border-radius: 11px;
         max-width: fit-content; }
 
@@ -160,5 +161,110 @@ footer {
   width: calc(100% / 3);
   background-color: #000;
   color: yellow; }
+
+.main-productos section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-image: url(../assets/img/background-general.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding: 0.625rem; }
+  .main-productos section .grid-menu {
+    display: flex;
+    margin: 10px;
+    gap: 10px; }
+    .main-productos section .grid-menu img {
+      width: 365px;
+      height: 210px;
+      box-shadow: -29px 25px 38px -13px rgba(0, 0, 0, 0.75); }
+    .main-productos section .grid-menu div p {
+      text-align: left; }
+
+.main-sucursales {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/img/background-general.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%; }
+  .main-sucursales .flex-sucursales {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 30% 30% 40%;
+    margin: 1.25rem;
+    gap: 1.5rem; }
+    .main-sucursales .flex-sucursales iframe {
+      width: 100%;
+      border: 2px solid s #040404; }
+    .main-sucursales .flex-sucursales div ul li {
+      color: white;
+      text-transform: capitalize;
+      font-size: 24px;
+      font-family: "Inter", sans-serif;
+      font-weight: 400; }
+
+.main-registro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url(../assets/img/background-general.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  justify-content: center; }
+  .main-registro form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    align-items: center; }
+    .main-registro form h2 {
+      text-transform: uppercase;
+      color: #ffdf16;
+      font-family: "Inter", sans-serif; }
+    .main-registro form fieldset {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: 50vh;
+      margin: 10px;
+      border: 3px solid #ffe0166c;
+      border-radius: 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 20px; }
+      .main-registro form fieldset input {
+        width: 95%;
+        height: 130px;
+        font-size: 24px;
+        text-transform: capitalize;
+        font-weight: 700;
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-bottom: 4px solid #ffdf16; }
+      .main-registro form fieldset::placeholder {
+        color: #ffdf16; }
+    .main-registro form div {
+      display: flex;
+      width: 50%;
+      justify-content: center; }
+      .main-registro form div input {
+        background-color: #ffdf16;
+        color: black;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        width: 95%;
+        height: 80px;
+        text-decoration: none;
+        border: none; }
+        .main-registro form div input:hover {
+          background-color: #000;
+          color: #ffdf16; }
 
 /* por ultimo los mediaquerys */

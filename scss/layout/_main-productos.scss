@@ -1,0 +1,28 @@
+.main-productos {
+	section {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		background-image: url(../assets/img/background-general.jpg);
+		background-position: center;
+		background-size: cover;
+		height: 100%;
+		padding: 0.625rem;
+		.grid-menu {
+			display: flex;
+			margin: 10px;
+			gap: 10px;
+			img {
+				width: 365px;
+				height: 210px;
+				box-shadow: -29px 25px 38px -13px rgba(0, 0, 0, 0.75);
+			}
+
+			div {
+				p {
+					text-align: left;
+				}
+			}
+		}
+	}
+}
