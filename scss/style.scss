@@ -13,9 +13,17 @@
 @import "./layout/main-index";
 @import "./layout/footer";
 @import "./layout/main-nosotros";
-@import "./components/card";
 @import "./layout/main-productos";
 @import "./layout/main-sucursales";
 @import "./layout/main-registro";
 
+/* todo lo referente a componentes */
+
+@import "./components/card";
+
 /* por ultimo los mediaquerys */
+
+@import "./layout/media-1440px";
+@import "./layout/media-1024px";
+@import "./layout/media-768px";
+@import "./layout/media-425px";

@@ -1,0 +1,28 @@
+@media (max-width: 425px) {
+	footer {
+		padding: 0;
+	}
+}
+
+@media (max-width: 425px) {
+	.main-productos {
+		.section-productos {
+			display: flex;
+			flex-direction: column;
+			max-width: fit-content;
+			height: fit-content;
+			align-items: self-start;
+			padding: 0;
+		}
+		.grid-menu {
+			display: flex;
+			flex-direction: column;
+			width: auto;
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
