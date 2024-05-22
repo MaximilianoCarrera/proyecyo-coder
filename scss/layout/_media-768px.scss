@@ -31,3 +31,23 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.main-sucursales {
+		.flex-sucursales {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			iframe {
+				grid-column: 1/4;
+			}
+			p {
+				grid-column: 3/4;
+				grid-row: 2/4;
+			}
+			div {
+				grid-column: 1/3;
+			}
+		}
+	}
+}

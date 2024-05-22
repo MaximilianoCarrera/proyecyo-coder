@@ -5,10 +5,7 @@ header {
 		display: flex;
 		align-items: center;
 		ul {
-			display: flex;
-			justify-content: space-evenly;
-			list-style: none;
-			width: 100%;
+			@include flex;
 			li {
 				a {
 					text-decoration: none;

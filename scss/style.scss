@@ -1,5 +1,7 @@
 /* siempre llamo primero a las utilidades */
 @import "./utilities/variable";
+@import "./utilities/maps";
+@import "./utilities/mixin";
 
 /* deberían ir los bloques que corresponden a la carpeta bases */
 
@@ -27,3 +29,4 @@
 @import "./layout/media-1024px";
 @import "./layout/media-768px";
 @import "./layout/media-425px";
+@import "./layout/media-320px";

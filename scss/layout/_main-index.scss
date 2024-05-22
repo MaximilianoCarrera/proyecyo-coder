@@ -10,7 +10,7 @@
 			background-size: cover;
 			height: 800px;
 			h1 {
-				color: #ffdf16;
+				color: map-get($color, amarillo);
 				text-align: left;
 				font-family: "Rubik Mono One";
 				font-size: 96px;
@@ -72,7 +72,7 @@
 			}
 		}
 		&:nth-child(2) {
-			background-color: $black;
+			background-color: map-get($color, negro);
 			width: 100%;
 			height: fit-content;
 			display: flex;
