@@ -3,14 +3,10 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		img {
-			display: inline-flex;
-			width: 80%;
-			margin: 10px;
-			gap: 10px;
-		}
-		p {
-			margin: 10px;
+		.item-nosotros {
+			display: flex;
+			flex-direction: column;
+			width: 85%;
 		}
 	}
 

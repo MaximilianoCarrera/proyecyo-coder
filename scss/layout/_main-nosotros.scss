@@ -1,37 +1,31 @@
 .main-nosotros {
-	display: grid;
+	display: flex;
 	justify-items: center;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	background-image: url(../assets/img/background-general.jpg);
+	background-image: url(../assets/img/background-general.webp);
 	background-position: center;
 	background-size: cover;
 	height: 100%;
 	background-repeat: no-repeat;
-	grid-template-areas:
-		"img1 p"
-		"img2 p";
-
-	img {
-		width: 43.125rem;
-		height: 19.6875rem;
-		margin: 30px 0px 20px 20px;
-		box-shadow: -29px 25px 38px -13px rgba(0, 0, 0, 0.75);
-		border-radius: 3px;
-
-		&:first-child {
-			grid-area: img1;
+	gap: 10px;
+	.item-nosotros {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		gap: 10px;
+		img {
+			width: 95%;
+			height: 420px;
+			margin: 20px 0px 20px 20px;
+			box-shadow: -29px 25px 38px -13px rgba(0, 0, 0, 0.75);
+			border-radius: 3px;
 		}
-		&:last-child {
-			grid-area: img2;
+		p {
+			margin: 20px 20px 20px 30px;
+			line-height: 2.3rem;
+			grid-area: p1;
+			text-transform: capitalize;
 		}
-	}
-
-	p {
-		margin: 30px 20px 20px 0px;
-		line-height: 2.3rem;
-		font-weight: 400;
-		grid-area: p;
-		text-transform: capitalize;
 	}
 }

@@ -3,6 +3,18 @@
 		div {
 			display: flex;
 			flex-direction: column;
+			p {
+				font-size: 1.25rem;
+			}
+		}
+	}
+}
+@media (max-width: 320px) {
+	.main-nosotros {
+		.item-nosotros {
+			img {
+				height: 250px;
+			}
 		}
 	}
 }
@@ -16,6 +28,49 @@
 						font-size: 16px;
 					}
 				}
+			}
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	.main-index {
+		section {
+			&:first-child {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: 10px;
+				height: 450px;
+				h1 {
+					font-size: 40px;
+				}
+				h2 {
+					font-size: 20px;
+				}
+			}
+			&:nth-child(2) {
+				h2 {
+					font-size: 1.5rem;
+				}
+				div {
+					display: grid;
+					article {
+						display: flex;
+						flex-direction: column;
+						img {
+							width: 70%;
+						}
+						p {
+							width: 70%;
+							font-size: 16px;
+							margin: 0;
+						}
+					}
+				}
+			}
+			&:last-child {
+				display: none;
 			}
 		}
 	}

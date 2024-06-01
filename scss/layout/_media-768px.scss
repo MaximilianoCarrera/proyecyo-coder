@@ -51,3 +51,69 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.main-index {
+		section {
+			&:first-child {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: 3.625rem;
+				h1 {
+					font-size: 3.75rem;
+				}
+				h2 {
+					font-size: 1.875rem;
+				}
+			}
+			&:nth-child(2) {
+				h2 {
+					padding: 10px;
+					font-size: 30px;
+					margin: 10px 0 0 40px;
+				}
+				div {
+					display: flex;
+					flex-direction: column;
+					article {
+						flex-direction: row;
+						width: 100%;
+						img {
+							width: 50%;
+						}
+						p {
+							padding: 5px;
+							margin-right: 1.25rem;
+						}
+					}
+				}
+			}
+			&:last-child {
+				padding: 10px;
+				.card {
+					margin: 5px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.main-registro {
+		form {
+			gap: 0;
+			h2 {
+				margin: 10px;
+				font-size: 1.875rem;
+			}
+			fieldset {
+				height: 70%;
+				width: 95%;
+			}
+			button {
+				width: 95%;
+			}
+		}
+	}
+}

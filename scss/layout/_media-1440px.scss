@@ -1,4 +1,27 @@
 @media (max-width: 1440px) {
+	.main-index {
+		section {
+			&:nth-child(2) {
+				div {
+					article {
+						flex-direction: column;
+						gap: 5px;
+						justify-content: center;
+						align-items: center;
+						img {
+							width: 80%;
+						}
+						p {
+							width: 80%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1440px) {
 	.main-nosotros {
 		grid-template-areas:
 			"img1 img2"

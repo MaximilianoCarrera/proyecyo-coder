@@ -1,6 +1,38 @@
 @media (max-width: 425px) {
+	header {
+		nav {
+			ul {
+				li {
+					a {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 425px) {
 	footer {
 		padding: 0;
+		div {
+			p {
+				font-size: 1.25rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.main-nosotros {
+		.item-nosotros {
+			img {
+				height: 320px;
+			}
+			p {
+				font-size: 1rem;
+			}
+		}
 	}
 }
 
@@ -32,6 +64,81 @@
 		.flex-sucursales {
 			display: flex;
 			flex-direction: column;
+			div {
+				ul {
+					li {
+						font-size: 1.2rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.main-index {
+		section {
+			&:first-child {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: 10px;
+				h1 {
+					font-size: 48px;
+				}
+				h2 {
+					font-size: 24px;
+				}
+			}
+			&:nth-child(2) {
+				h2 {
+					font-size: 1.5rem;
+				}
+				div {
+					display: grid;
+					article {
+						display: flex;
+						flex-direction: column;
+						img {
+							width: 70%;
+						}
+						p {
+							width: 70%;
+							font-size: 16px;
+							margin: 0;
+						}
+					}
+				}
+			}
+			&:last-child {
+				.carousel-item {
+					align-items: center;
+					.cards-wrapper {
+						flex-wrap: wrap;
+
+						.card {
+							flex: 0 0 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.main-registro {
+		form {
+			h2 {
+				margin: 10px;
+				font-size: 1.875rem;
+				fieldset {
+					height: 70%;
+				}
+				fieldset {
+					width: 95%;
+				}
+			}
 		}
 	}
 }

@@ -144,7 +144,7 @@ header {
         max-width: fit-content; }
 
 .main-index section:last-child {
-  background-image: url(../assets/img/background-general.jpg); }
+  background-image: url(../assets/img/background-general.webp); }
   .main-index section:last-child .cards-wrapper {
     display: flex; }
 
@@ -168,38 +168,38 @@ footer {
       font-weight: 400; }
 
 .main-nosotros {
-  display: grid;
+  display: flex;
   justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  background-image: url(../assets/img/background-general.jpg);
+  background-image: url(../assets/img/background-general.webp);
   background-position: center;
   background-size: cover;
   height: 100%;
   background-repeat: no-repeat;
-  grid-template-areas: "img1 p" "img2 p"; }
-  .main-nosotros img {
-    width: 43.125rem;
-    height: 19.6875rem;
-    margin: 30px 0px 20px 20px;
-    box-shadow: -29px 25px 38px -13px rgba(0, 0, 0, 0.75);
-    border-radius: 3px; }
-    .main-nosotros img:first-child {
-      grid-area: img1; }
-    .main-nosotros img:last-child {
-      grid-area: img2; }
-  .main-nosotros p {
-    margin: 30px 20px 20px 0px;
-    line-height: 2.3rem;
-    font-weight: 400;
-    grid-area: p;
-    text-transform: capitalize; }
+  gap: 10px; }
+  .main-nosotros .item-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 10px; }
+    .main-nosotros .item-nosotros img {
+      width: 95%;
+      height: 420px;
+      margin: 20px 0px 20px 20px;
+      box-shadow: -29px 25px 38px -13px rgba(0, 0, 0, 0.75);
+      border-radius: 3px; }
+    .main-nosotros .item-nosotros p {
+      margin: 20px 20px 20px 30px;
+      line-height: 2.3rem;
+      grid-area: p1;
+      text-transform: capitalize; }
 
 .main-productos section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  background-image: url(../assets/img/background-general.jpg);
+  background-image: url(../assets/img/background-general.webp);
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -262,18 +262,17 @@ footer {
       display: flex;
       flex-direction: column;
       width: 50%;
-      height: 50vh;
+      height: 70%;
       margin: 10px;
       border: 3px solid #ffe0166c;
       border-radius: 10px;
       justify-content: center;
       align-items: center;
-      gap: 10px;
       padding: 20px; }
       .main-registro form fieldset input {
         width: 95%;
-        height: 130px;
-        font-size: 24px;
+        height: 110px;
+        font-size: 30px;
         text-transform: capitalize;
         font-weight: 700;
         background-color: transparent;
@@ -335,6 +334,17 @@ footer {
 
 /* por ultimo los mediaquerys */
 @media (max-width: 1440px) {
+  .main-index section:nth-child(2) div article {
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center; }
+    .main-index section:nth-child(2) div article img {
+      width: 80%; }
+    .main-index section:nth-child(2) div article p {
+      width: 80%; } }
+
+@media (max-width: 1440px) {
   .main-nosotros {
     grid-template-areas: "img1 img2" "p p"; }
     .main-nosotros img {
@@ -363,13 +373,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .main-nosotros img {
-      display: inline-flex;
-      width: 80%;
-      margin: 10px;
-      gap: 10px; }
-    .main-nosotros p {
-      margin: 10px; }
+    .main-nosotros .item-nosotros {
+      display: flex;
+      flex-direction: column;
+      width: 85%; }
   .footer {
     display: flex;
     flex-direction: column-reverse; } }
@@ -424,9 +431,63 @@ footer {
     .main-sucursales .flex-sucursales div {
       grid-column: 1/3; } }
 
+@media (max-width: 768px) {
+  .main-index section:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3.625rem; }
+    .main-index section:first-child h1 {
+      font-size: 3.75rem; }
+    .main-index section:first-child h2 {
+      font-size: 1.875rem; }
+  .main-index section:nth-child(2) h2 {
+    padding: 10px;
+    font-size: 30px;
+    margin: 10px 0 0 40px; }
+  .main-index section:nth-child(2) div {
+    display: flex;
+    flex-direction: column; }
+    .main-index section:nth-child(2) div article {
+      flex-direction: row;
+      width: 100%; }
+      .main-index section:nth-child(2) div article img {
+        width: 50%; }
+      .main-index section:nth-child(2) div article p {
+        padding: 5px;
+        margin-right: 1.25rem; }
+  .main-index section:last-child {
+    padding: 10px; }
+    .main-index section:last-child .card {
+      margin: 5px; } }
+
+@media (max-width: 768px) {
+  .main-registro form {
+    gap: 0; }
+    .main-registro form h2 {
+      margin: 10px;
+      font-size: 1.875rem; }
+    .main-registro form fieldset {
+      height: 70%;
+      width: 95%; }
+    .main-registro form button {
+      width: 95%; } }
+
+@media (max-width: 425px) {
+  header nav ul li a {
+    font-size: 20px; } }
+
 @media (max-width: 425px) {
   footer {
-    padding: 0; } }
+    padding: 0; }
+    footer div p {
+      font-size: 1.25rem; } }
+
+@media (max-width: 425px) {
+  .main-nosotros .item-nosotros img {
+    height: 320px; }
+  .main-nosotros .item-nosotros p {
+    font-size: 1rem; } }
 
 @media (max-width: 425px) {
   .main-productos .section-productos {
@@ -447,13 +508,87 @@ footer {
 @media (max-width: 425px) {
   .main-sucursales .flex-sucursales {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+    .main-sucursales .flex-sucursales div ul li {
+      font-size: 1.2rem; } }
+
+@media (max-width: 425px) {
+  .main-index section:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px; }
+    .main-index section:first-child h1 {
+      font-size: 48px; }
+    .main-index section:first-child h2 {
+      font-size: 24px; }
+  .main-index section:nth-child(2) h2 {
+    font-size: 1.5rem; }
+  .main-index section:nth-child(2) div {
+    display: grid; }
+    .main-index section:nth-child(2) div article {
+      display: flex;
+      flex-direction: column; }
+      .main-index section:nth-child(2) div article img {
+        width: 70%; }
+      .main-index section:nth-child(2) div article p {
+        width: 70%;
+        font-size: 16px;
+        margin: 0; }
+  .main-index section:last-child .carousel-item {
+    align-items: center; }
+    .main-index section:last-child .carousel-item .cards-wrapper {
+      flex-wrap: wrap; }
+      .main-index section:last-child .carousel-item .cards-wrapper .card {
+        flex: 0 0 100%; } }
+
+@media (max-width: 425px) {
+  .main-registro form h2 {
+    margin: 10px;
+    font-size: 1.875rem; }
+    .main-registro form h2 fieldset {
+      height: 70%; }
+    .main-registro form h2 fieldset {
+      width: 95%; } }
 
 @media (max-width: 320px) {
   .footer div {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+    .footer div p {
+      font-size: 1.25rem; } }
+
+@media (max-width: 320px) {
+  .main-nosotros .item-nosotros img {
+    height: 250px; } }
 
 @media (max-width: 320px) {
   .main-sucursales .flex-sucursales div ul li {
     font-size: 16px; } }
+
+@media (max-width: 320px) {
+  .main-index section:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    height: 450px; }
+    .main-index section:first-child h1 {
+      font-size: 40px; }
+    .main-index section:first-child h2 {
+      font-size: 20px; }
+  .main-index section:nth-child(2) h2 {
+    font-size: 1.5rem; }
+  .main-index section:nth-child(2) div {
+    display: grid; }
+    .main-index section:nth-child(2) div article {
+      display: flex;
+      flex-direction: column; }
+      .main-index section:nth-child(2) div article img {
+        width: 70%; }
+      .main-index section:nth-child(2) div article p {
+        width: 70%;
+        font-size: 16px;
+        margin: 0; }
+  .main-index section:last-child {
+    display: none; } }
